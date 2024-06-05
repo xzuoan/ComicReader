@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/layout_folder_glance_bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lv_folder_glance_path"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/gray"
+            android:text="@string/lv_main_add_folder_path"
+            android:maxLines="1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/lv_folder_glance_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:text="@string/content_folder_glance_count_description"/>
+
+            <TextView
+                android:id="@+id/lv_folder_glance_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:background="@null"
+                android:text="@string/content_folder_glance_sort_description"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+
+        <LinearLayout
+            android:id="@+id/lv_folder_glance_back_dir"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingHorizontal="8dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/folder_02"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="@string/content_folder_glance_root_description"
+                android:paddingHorizontal="10dp"
+                android:gravity="clip_vertical"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"/>
+
+        <ListView
+            android:id="@+id/lv_folder_glance_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray"
+            android:dividerHeight="0.5dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_folder_glance_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/lv_folder_glance_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/content_folder_glance_cancel_description"
+            android:layout_toStartOf="@+id/lv_folder_glance_line"/>
+
+        <View
+            android:id="@+id/lv_folder_glance_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/gray"/>
+
+        <TextView
+            android:id="@+id/lv_folder_glance_complete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="@string/content_folder_glance_complete_description"
+            android:layout_toEndOf="@+id/lv_folder_glance_line"/>
+    </RelativeLayout>
+
+</RelativeLayout>

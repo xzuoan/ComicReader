@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="-90"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="500"
+    android:repeatCount="0"
+    android:visible="true">
+
+</rotate>
+
+<!--
+android:fromDegrees 起始的角度度数
+android:toDegrees 结束的角度度数，负数表示逆时针，正数表示顺时针
+android:pivotX 旋转中心的X坐标
+android:pivotY 旋转中心的Y坐标
+android:duration 表示从android:fromDegrees转动到android:toDegrees所花费的时间，单位为毫秒。可以用来计算速度
+android:interpolator表示变化率，但不是运行速度。一个插补属性，可以将动画效果设置为加速，减速，反复，反弹等。默认为开始和结束慢中间快
+android:startOffset 在调用start函数之后等待开始运行的时间，单位为毫秒，若为10，表示10ms后开始运行
+android:repeatCount 重复的次数，默认为0，必须是int，可以为-1表示不停止
+ -->

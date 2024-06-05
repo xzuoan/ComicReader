@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@null">
+
+        <ImageView
+            android:id="@+id/lv_folder_glance_description"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="8dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/folder_02"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lv_folder_glance_name"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:paddingHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:text="@string/lv_main_add_folder_path"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lv_folder_glance_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="11sp"
+                    android:textColor="@color/gray"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/content_folder_glance_count_description"/>
+
+                <TextView
+                    android:id="@+id/lv_folder_glance_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="11sp"
+                    android:textColor="@color/gray"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/lv_folder_glance_date_description"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lv_folder_glance_enter_dir"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:text="@string/content_folder_glance_enter_dir_description"
+            android:gravity="center"/>
+
+</LinearLayout>

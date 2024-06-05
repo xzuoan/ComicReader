@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="125dp"
+    android:layout_height="210dp"
+    android:background="@drawable/ic_shape_rectangle"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/lv_homepage_row_image"
+            android:layout_width="125dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/image_destroy_01"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/lv_homepage_row_pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="@string/lv_main_information_pages"
+            android:background="@drawable/ic_shape_rectangle3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lv_homepage_row_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lv_main_title"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:paddingHorizontal="3dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="11sp"
+        android:autoSizeMaxTextSize="18sp"
+        android:textSize="11sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lv_homepage_row_read_state_pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lv_main_information_progress"
+            android:textColor="@color/gray"
+            android:paddingHorizontal="3dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/lv_homepage_row_read_state_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lv_main_information_progress_percentage"
+            android:textColor="@color/gray"
+            android:paddingHorizontal="3dp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/lv_homepage_row_file_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lv_main_information_file_store"
+            android:textColor="@color/gray"
+            android:paddingStart="3dp"
+            android:paddingEnd="0dp"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lv_homepage_row_read_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lv_main_latest_read_time"
+            android:textColor="@color/gray"
+            android:paddingHorizontal="3dp"
+            android:maxLines="1"
+            android:textSize="11sp"/>
+
+        <ImageView
+            android:id="@+id/lv_homepage_row_more"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:rotation="90"
+            android:contentDescription="@string/lv_tools_more"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/more_01" />
+
+    </RelativeLayout>
+    
+</LinearLayout>

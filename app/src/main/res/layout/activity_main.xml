@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_layout_homepage">
+
+    <LinearLayout
+        android:id="@+id/homepage_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/navigation_bar_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_shape_rectangle4">
+
+            <RelativeLayout
+                android:id="@+id/layout_homepage_menu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/lv_tools_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:contentDescription="@string/lv_tools_menu"
+                    android:alpha="1.0"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@mipmap/menu_02"/>
+
+                <ImageView
+                    android:id="@+id/lv_tools_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="fill"
+                    android:alpha="0.0"
+                    android:clickable="false"
+                    android:contentDescription="@string/lv_tools_back"
+                    android:src="@mipmap/ic_back_to_new_page"/>
+            </RelativeLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/lv_homepage_tab_layout"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:clickable="true"
+                android:focusable="true"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                android:layout_toEndOf="@+id/layout_homepage_menu"
+                android:layout_centerVertical="true"
+                app:tabIndicator="@mipmap/ic_shape_jx_02"
+                app:tabIndicatorAnimationMode="elastic"
+                app:tabIndicatorGravity="center"
+                app:tabIndicatorFullWidth="true"
+                app:tabRippleColor="@null"
+                android:theme="@style/Theme.AppCompat.DayNight"/>
+
+            <EditText
+                android:id="@+id/lv_tools_searchbar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_toEndOf="@+id/lv_homepage_tab_layout"
+                android:layout_centerVertical="true"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:autofillHints="@null"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:hint="@null"
+                android:theme="@null"/>
+
+            <ImageView
+                android:id="@+id/lv_tools_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toStartOf="@+id/lv_tools_more"
+                android:layout_marginStart="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:contentDescription="@string/lv_tools_search"
+                android:src="@mipmap/search_02" />
+
+            <ImageView
+                android:id="@+id/lv_tools_more"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_gravity="center_vertical"
+                android:rotation="90"
+                android:contentDescription="@string/lv_tools_more"
+                android:src="@mipmap/more_01" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/homepage_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/lv_homepage_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_shape_rectangle"/>
+
+            <ImageButton
+                android:id="@+id/lv_tools_button_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="40dp"
+                android:src="@mipmap/more_03"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:contentDescription="@string/lv_tools_menu_set"/>
+
+            <ImageButton
+                android:id="@+id/lv_tools_button_close"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="90dp"
+                android:src="@mipmap/eye_01"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:visibility="invisible"
+                android:clickable="false"
+                android:contentDescription="@string/lv_tools_menu_set"/>
+
+            <ImageButton
+                android:id="@+id/lv_tools_button_redisplay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="130dp"
+                android:src="@mipmap/change_02"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@string/lv_tools_menu_set"/>
+
+            <ImageButton
+                android:id="@+id/lv_tools_button_sort"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="45dp"
+                android:layout_marginBottom="170dp"
+                android:src="@mipmap/lists_02"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+                android:background="@null"
+                android:clickable="false"
+                android:contentDescription="@string/lv_tools_menu_set"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

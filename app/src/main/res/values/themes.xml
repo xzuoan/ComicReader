@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ComicReader" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <!-- Secondary brand color. -->
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="anim" parent="Theme.AppCompat">
+        <item name="android:windowEnterAnimation">@anim/pop_window_animation_enter</item>
+        <item name="android:windowExitAnimation">@anim/pop_window_animation_exit</item>
+    </style>
+    <style name="checkboxStyle" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ic_check_box</item>
+    </style>
+</resources>

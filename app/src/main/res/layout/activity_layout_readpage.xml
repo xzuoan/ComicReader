@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context=".readpage.ReadPageActivity">
+
+    <ListView
+        android:id="@+id/lv_read_page_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:clickable="true"
+        android:fitsSystemWindows="true"
+        android:focusable="true"/>
+
+    <LinearLayout
+        android:id="@+id/lv_read_page_pop_bar_left"
+        android:layout_width="40dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+        android:alpha="0.6">
+
+       <com.comic.comicreader.readpage.VerticalSeekBar
+           android:id="@+id/lv_read_page_seekbar_brightness"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.8"
+           android:progress="0"
+           android:max="100"
+           android:thumb="@null"
+           android:progressDrawable="@drawable/drawable_progress"
+           android:maxHeight="8dp"
+           android:splitTrack="true"/>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.06"
+           android:src="@mipmap/sun_01"
+           android:layout_marginTop="5dp"/>
+
+       <CheckBox
+           android:id="@+id/lv_read_page_check_box"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.07"
+           android:layout_marginVertical="5dp"
+           android:layout_marginStart="3dp"
+           android:checked="true"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="0.07"
+           android:gravity="center"
+           android:textColor="@color/white"
+           android:textSize="12sp"
+           android:text="@string/context_brightness_description"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lv_read_page_pop_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@color/transparent"
+        android:alpha="0.6">
+
+        <ImageView
+            android:id="@+id/lv_read_page_button_back_to_homepage"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_back_to_new_page_01"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/lv_read_page_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"
+            android:text="@string/lv_main_title"
+            android:maxLines="1"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_read_page_pop_bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/transparent"
+        android:alpha="0.6">
+
+        <TextView
+            android:id="@+id/lv_read_page_progress"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="@string/lv_main_information_progress"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="12sp"/>
+
+        <SeekBar
+            android:id="@+id/lv_read_page_seekbar_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxHeight="3dp"
+            android:progress="0"
+            android:max="100"
+            android:paddingHorizontal="0dp"
+            android:layout_marginHorizontal="5dp"
+            android:progressDrawable="@drawable/drawable_progress"
+            android:splitTrack="true"/>
+    </LinearLayout>
+
+</RelativeLayout>

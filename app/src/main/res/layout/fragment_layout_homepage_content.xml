@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".homepage.FragmentHomePageContent">
+
+        <TextView
+            android:id="@+id/lv_homepage_grid_description"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/context_homepage_title"
+            android:textSize="14sp"/>
+
+        <GridView
+            android:id="@+id/lv_homepage_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:layout_marginVertical="1dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarSize="5dp"
+            android:divider="@null"
+            android:horizontalSpacing="3dp"
+            android:verticalSpacing="3dp"
+            android:fadeScrollbars="true"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="10dp"
+            android:listSelector="@drawable/ic_shape_rectangle5"
+            android:numColumns="2"
+            android:drawSelectorOnTop="true">
+
+        </GridView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="51dp"
+    android:background="@drawable/ic_shape_rectangle2"
+    android:padding="1dp">
+
+    <TextView
+        android:id="@+id/content_operate_remove"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="11sp"
+        android:text="@string/content_operate_remove_description"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/content_operate_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="11sp"
+        android:text="@string/content_operate_favorite_description"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

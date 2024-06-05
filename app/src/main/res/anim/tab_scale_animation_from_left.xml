@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:fromXScale="0.0"
+    android:fromYScale="1.0"
+    android:pivotX="0%"
+    android:pivotY="100%"
+    android:toXScale="1.0"
+    android:toYScale="1.0">
+
+</scale>
+
+<!--
+duration：动画的执行时间 毫秒为单位
+fromXScale:执行动画的起始缩放X轴 / 从自身X轴长度多少倍开始缩放
+fromYScale：执行动画的起始缩放Y轴
+pivotX：缩放起点X轴坐标 / 动画相对于控件X坐标开始位置 50%表示从该控件中心开始缩放 0%表示从右到左伸展，100%表示左到右伸展
+pivotY：缩放起点Y轴坐标
+toXScale:执行动画的结束缩放X轴 / 缩放到自身X轴长度多少倍结束 浮点数|分数|尺寸
+toYScale：执行动画的结束缩放Y轴
+-->

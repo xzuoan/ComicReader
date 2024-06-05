@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/lv_folder_manage_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lv_main_add_folder_notice"
+        android:layout_alignParentTop="true"
+        android:textSize="14sp"/>
+
+        <ListView
+            android:id="@+id/lv_folder_manage_list_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lv_folder_manage_button_save"
+            android:layout_below="@+id/lv_folder_manage_description"
+            android:scrollbars="none"
+            android:clickable="true"
+            android:focusable="true"
+            android:drawSelectorOnTop="true"
+            android:dividerHeight="1dp"/>
+
+    <Button
+        android:id="@+id/lv_folder_manage_button_save"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/lv_tools_manage_button_save"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@drawable/ic_shape_rectangle"
+        android:visibility="invisible"
+        android:clickable="false"/>
+
+</RelativeLayout>

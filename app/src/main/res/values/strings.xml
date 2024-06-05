@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ComicReader</string>
+    <string name="app_name_simplified_Chinese">漫画阅读工具</string>
+    <string name="lv_tools_search">搜索</string>
+    <string name="lv_tools_array">排列</string>
+    <string name="lv_tools_menu">菜单栏</string>
+    <string name="lv_tools_menu_set">设置</string>
+    <string name="lv_tools_menu_about">关于</string>
+    <string name="lv_tools_more">更多</string>
+    <string name="lv_tools_back">返回</string>
+    <string name="lv_main_latest_read_time">1970-01-01 00:00</string>
+    <string name="lv_main_information_pages">100P</string>
+    <string name="lv_main_information_progress_percentage">0%</string>
+    <string name="lv_main_information_progress">0/0</string>
+    <string name="lv_main_information_file_store">0.0mb</string>
+    <string name="nothing">@null</string>
+    <string name="lv_main_title">这里是标题，最多展示两行这里是标题，最多展示两行这里是标题，最多展示两行...</string>
+    <string name="lv_main_add_folder_notice">点击管理文件夹, 长按可删除选项</string>
+    <string name="lv_main_add_folder_path">F:\\Pprojects\\AandroidStudioProjects\\ssource\\icons</string>
+    <string name="lv_tools_more_refresh">刷  新</string>
+    <string name="lv_tools_more_add">添  加</string>
+    <string name="lv_tools_more_favorite">收  藏</string>
+    <string name="lv_tools_more_history">历  史</string>
+    <string name="context_homepage_title">主页</string>
+    <string name="lv_tools_sort">排序</string>
+    <string name="lv_tools_manage_button_save">保 存</string>
+    <string name="lv_tools_loading_information">加载中 ...</string>
+    <string name="context_brightness_description">AUTO</string>
+    <string name="content_folder_glance_count_description">621项</string>
+    <string name="lv_folder_glance_date_description">2024-05-28 17:02:01</string>
+    <string name="content_folder_glance_sort_description">↓名称</string>
+    <string name="content_folder_glance_root_description">...</string>
+    <string name="content_folder_glance_cancel_description">取消</string>
+    <string name="content_folder_glance_complete_description">确认</string>
+    <string name="content_folder_glance_enter_dir_description"><![CDATA[>]]></string>
+    <string name="content_operate_remove_description">删除</string>
+    <string name="content_operate_favorite_description">添加到收藏</string>
+</resources>

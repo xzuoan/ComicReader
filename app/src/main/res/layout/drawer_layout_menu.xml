@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.comic.comicreader.homepage.ScrollerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:id="@+id/lv_menu_sidebar"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lv_menu_sidebar_left"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_shape_rectangle2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_menu_sidebar_back"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_back_to_new_page"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_shape_rectangle2"
+            android:text="@string/lv_tools_menu_set"
+            android:gravity="center_vertical"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/ic_shape_rectangle2"
+            android:text="@string/lv_tools_menu_about"
+            android:gravity="center_vertical"
+            android:paddingStart="30dp"
+            android:paddingEnd="0dp"/>
+
+    </LinearLayout>
+
+</com.comic.comicreader.homepage.ScrollerLayout>
